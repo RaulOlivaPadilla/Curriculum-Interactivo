@@ -1,0 +1,60 @@
+﻿<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Tu Nombre — Currículum Interactivo</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <h1 id="name">Tu Nombre</h1>
+      <p id="tagline">Desarrollador/a Web • Frontend • UX</p>
+      <nav>
+        <a href="#about">Sobre mí</a>
+        <a href="#experience">Experiencia</a>
+        <a href="#projects">Proyectos</a>
+        <a href="#skills">Habilidades</a>
+        <a href="#contact">Contacto</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section id="about">
+      <h2>Sobre mí</h2>
+      <p>Pequeña introducción: quién eres, qué buscas y tu propuesta de valor.</p>
+    </section>
+
+    <section id="experience">
+      <h2>Experiencia</h2>
+      <div id="timeline" class="timeline">
+        <!-- El contenido de la línea de tiempo se genera desde js/script.js -->
+      </div>
+    </section>
+
+    <section id="projects">
+      <h2>Proyectos</h2>
+      <div class="projects-grid" id="projectsGrid"></div>
+    </section>
+
+    <section id="skills">
+      <h2>Habilidades</h2>
+      <ul id="skillsList"></ul>
+    </section>
+
+    <section id="contact">
+      <h2>Contacto</h2>
+      <p>Email: <a href="mailto:tu@correo.com">tu@correo.com</a></p>
+      <p><a href="#" id="downloadPdf">Descargar CV (PDF)</a></p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">© <span id="year"></span> Tu Nombre — Currículum Interactivo</div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
