@@ -15,7 +15,7 @@ const experience = [
 ];
 
 const projects = [
-  {id: 'p1', name: 'Proyecto A', description: 'Demo de proyecto A', link: '#'},
+  {id: 'p1', name: 'Proyecto ZYRO', description: 'Proyecto final de Grado', link: 'ZYRO.pdf'},
   {id: 'p2', name: 'Proyecto B', description: 'Demo de proyecto B', link: '#'}
 ];
 

@@ -1,60 +1,82 @@
 ﻿<!doctype html>
 <html lang="es">
+
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Tu Nombre — Currículum Interactivo</title>
-  <link rel="stylesheet" href="css/styles.css">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Raúl Oliva Padilla — Currículum Interactivo</title>
+    <link rel="stylesheet" href="css/styles.css">
 </head>
+
 <body>
-  <header class="site-header">
-    <div class="container">
-      <h1 id="name">Tu Nombre</h1>
-      <p id="tagline">Desarrollador/a Web • Frontend • UX</p>
-      <nav>
-        <a href="#about">Sobre mí</a>
-        <a href="#experience">Experiencia</a>
-        <a href="#projects">Proyectos</a>
-        <a href="#skills">Habilidades</a>
-        <a href="#contact">Contacto</a>
-      </nav>
-    </div>
-  </header>
+    <header class="site-header">
+        <div class="container">
+            <h1 id="name">Raúl Oliva Padilla</h1>
+            <p id="tagline">Desarrollador Multiplataforma</p>
+            <nav>
+                <a href="#about">Sobre mí</a>
+                <a href="#experience">Experiencia</a>
+                <a href="#projects">Proyectos</a>
+                <a href="#skills">Habilidades</a>
+                <a href="#contact">Contacto</a>
+            </nav>
+        </div>
+    </header>
 
-  <main class="container">
-    <section id="about">
-      <h2>Sobre mí</h2>
-      <p>Pequeña introducción: quién eres, qué buscas y tu propuesta de valor.</p>
-    </section>
+    <main class="container layout">
+        <aside class="profile">
+            <img src="assets/profile.jpg" alt="Foto de Raúl" class="avatar" onerror="this.style.display='none'">
+            <h2>Raúl Oliva Padilla</h2>
+            <p>Email: <a href="mailto:raulolivapadilla99@gmail.com">raulolivapadilla99@gmail.com</a></p>
+            <p><a href="CV.pdf" class="btn" target="_blank">Descargar CV (PDF)</a></p>
+            <p style="margin-top:8px;"><a href="https://github.com/RaulOlivaPadilla" target="_blank">GitHub</a> · <a
+                    href="https://www.linkedin.com/in/raúl-oliva-padilla-1708a7360" target="_blank">LinkedIn</a></p>
+        </aside>
 
-    <section id="experience">
-      <h2>Experiencia</h2>
-      <div id="timeline" class="timeline">
-        <!-- El contenido de la línea de tiempo se genera desde js/script.js -->
-      </div>
-    </section>
+        <div class="content">
+            <section id="about">
+                <h2>Sobre mí</h2>
+                <p>Recién graduado en Desarrollo de Aplicaciones Multiplataforma con una sólida base técnica en gestión
+                    de bases de datos (MySQL, PostgreSQL) y control de versiones (Git) y programación orientada a
+                    objetos
+                    (Java). Mi valor diferencial reside en mi bagaje como gerente en el sector hostelero: sé liderar
+                    equipos, resolver conflictos en tiempo real y
+                    mantener la calma bajo presión.</p>
+                    <p>Soy resolutivo, empático y tengo muchas ganas de demostrar mi valía
+                    en un equipo de desarrollo, aportando una visión integral que va más allá del
+                    código.</p>
+            </section>
 
-    <section id="projects">
-      <h2>Proyectos</h2>
-      <div class="projects-grid" id="projectsGrid"></div>
-    </section>
+            <section id="experience">
+                <h2>Experiencia</h2>
+                <div id="timeline" class="timeline">
+                    <!-- El contenido de la línea de tiempo se genera desde js/script.js -->
+                </div>
+            </section>
 
-    <section id="skills">
-      <h2>Habilidades</h2>
-      <ul id="skillsList"></ul>
-    </section>
+            <section id="projects">
+                <h2>Proyectos</h2>
+                <div class="projects-grid" id="projectsGrid"></div>
+            </section>
 
-    <section id="contact">
-      <h2>Contacto</h2>
-      <p>Email: <a href="mailto:tu@correo.com">tu@correo.com</a></p>
-      <p><a href="#" id="downloadPdf">Descargar CV (PDF)</a></p>
-    </section>
-  </main>
+            <section id="skills">
+                <h2>Habilidades</h2>
+                <ul id="skillsList"></ul>
+            </section>
 
-  <footer class="site-footer">
-    <div class="container">© <span id="year"></span> Tu Nombre — Currículum Interactivo</div>
-  </footer>
+            <section id="contact">
+                <h2>Contacto</h2>
+                <p>Si quieres que añada un formulario de contacto, indícamelo. Por ahora el correo aparece a la
+                    izquierda.</p>
+            </section>
+        </div>
+    </main>
 
-  <script src="js/script.js"></script>
+    <footer class="site-footer">
+        <div class="container">© <span id="year"></span> Raúl Oliva Padilla — Currículum Interactivo</div>
+    </footer>
+
+    <script src="js/script.js"></script>
 </body>
+
 </html>
