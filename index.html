@@ -10,20 +10,48 @@
 
 <body>
     <header class="site-header">
-        <div class="container header-inner">
-            <div class="header-intro">
-                <div>
-                    <h1 id="name">Raúl Oliva Padilla</h1>
-                    <p id="tagline">Desarrollador Multiplataforma</p>
+        <div class="container">
+            <div class="header-inner">
+                <div class="header-intro">
+                    <div class="header-avatar-wrap">
+                        <span class="availability-dot" aria-label="Disponible"></span>
+                    </div>
+                    <div class="header-copy">
+                        <p class="header-eyebrow" data-i18n="headerEyebrow">CURRÍCULUM INTERACTIVO</p>
+                        <h1 id="name">Raúl Oliva Padilla</h1>
+                        <p id="tagline"><span data-i18n="taglineRole">Desarrollador Multiplataforma</span> <strong>·</strong> <span data-i18n="taglineValue">Construyendo ideas útiles</span></p>
+                    </div>
+                </div>
+                <div class="header-actions">
+                    <div class="header-status"><span></span><span data-i18n="available">Disponible para nuevos retos</span></div>
+                    <div class="language-switch" role="group" aria-label="Selector de idioma">
+                        <button type="button" class="language-button active" data-language="es" aria-label="Cambiar a castellano"
+                            aria-pressed="true" title="Castellano">
+                            <svg class="flag-icon" viewBox="0 0 30 20" aria-hidden="true">
+                                <rect width="30" height="20" fill="#c60b1e"/>
+                                <rect y="5" width="30" height="10" fill="#ffc400"/>
+                            </svg>
+                        </button>
+                        <button type="button" class="language-button" data-language="en" aria-label="Switch to English"
+                            aria-pressed="false" title="English">
+                            <svg class="flag-icon" viewBox="0 0 30 20" aria-hidden="true">
+                                <rect width="30" height="20" fill="#012169"/>
+                                <path d="M0 0 30 20M30 0 0 20" stroke="#fff" stroke-width="4"/>
+                                <path d="M0 0 30 20M30 0 0 20" stroke="#c8102e" stroke-width="2"/>
+                                <path d="M15 0v20M0 10h30" stroke="#fff" stroke-width="6"/>
+                                <path d="M15 0v20M0 10h30" stroke="#c8102e" stroke-width="3"/>
+                            </svg>
+                        </button>
+                    </div>
                 </div>
             </div>
-            <nav>
-                <a href="#about">Sobre mí</a>
-                <a href="#experience">Experiencia</a>
-                <a href="#projects">Proyectos</a>
-                <a href="#skills">Habilidades</a>
-                <a href="#softskills">Habilidades blandas</a>
-                <a href="#contact">Contacto</a>
+            <nav aria-label="Navegación principal">
+                <a href="#about" data-i18n="navAbout">Sobre mí</a>
+                <a href="#experience" data-i18n="navExperience">Experiencia</a>
+                <a href="#projects" data-i18n="navProjects">Proyectos</a>
+                <a href="#skills" data-i18n="navSkills">Habilidades</a>
+                <a href="#softskills" data-i18n="navSoftSkills">Habilidades blandas</a>
+                <a href="#contact" class="nav-contact"><span data-i18n="navContact">Contacto</span> <span aria-hidden="true">↗</span></a>
             </nav>
         </div>
     </header>
@@ -31,60 +59,60 @@
     <main class="container layout">
         <aside class="profile">
             <img src="assets/profile.jpg" alt="Foto de Raúl" class="avatar" onerror="this.style.display='none'">
-            <h2>Raúl Oliva Padilla</h2>
             <img src="perfil.jpeg" alt="Foto de perfil" class="header-photo">
-            <p>Email: <a href="mailto:raulolivapadilla99@gmail.com">raulolivapadilla99@gmail.com</a></p>
-            <p><a href="CV.pdf" class="btn" target="_blank">Descargar CV (PDF)</a></p>
+            <p><a href="CV.pdf" id="downloadPdf" class="btn" target="_blank" data-i18n="downloadCv">Descargar CV (PDF)</a></p>
             <p style="margin-top:8px;"><a href="https://github.com/RaulOlivaPadilla" target="_blank">GitHub</a> · <a
-                    href="https://www.linkedin.com/in/raúl-oliva-padilla-1708a7360" target="_blank">LinkedIn</a></p>
+                    href="https://www.linkedin.com/in/raúl-oliva-padilla
+
+" target="_blank">LinkedIn</a></p>
         </aside>
 
         <div class="content">
             <section id="about">
-                <h2>Sobre mí</h2>
-                <p>Recién graduado en Desarrollo de Aplicaciones Multiplataforma con una sólida base técnica en gestión
-                    de bases de datos (MySQL, PostgreSQL) y control de versiones (Git) y programación orientada a
+                <h2 data-i18n="aboutTitle">Sobre mí</h2>
+                <p data-i18n="aboutText1">Recién graduado en Desarrollo de Aplicaciones Multiplataforma con una sólida base técnica en gestión
+                    de bases de datos (MySQL, PostgreSQL), control de versiones (Git y GitHub) y programación orientada a
                     objetos
                     (Java). Mi valor diferencial reside en mi bagaje como gerente en el sector hostelero: sé liderar
                     equipos, resolver conflictos en tiempo real y
                     mantener la calma bajo presión.</p>
-                <p>Soy resolutivo, empático y tengo muchas ganas de demostrar mi valía
+                <p data-i18n="aboutText2">Soy resolutivo, empático y tengo muchas ganas de demostrar mi valía
                     en un equipo de desarrollo, aportando una visión integral que va más allá del
                     código.</p>
             </section>
 
             <section id="experience">
-                <h2>Experiencia</h2>
+                <h2 data-i18n="experienceTitle">Experiencia</h2>
                 <div id="timeline" class="timeline">
                     <!-- El contenido de la línea de tiempo se genera desde js/script.js -->
                 </div>
             </section>
 
             <section id="projects">
-                <h2>Proyectos</h2>
+                <h2 data-i18n="projectsTitle">Proyectos</h2>
                 <div class="projects-grid" id="projectsGrid"></div>
             </section>
 
             <section id="skills">
-                <h2>Habilidades</h2>
+                <h2 data-i18n="skillsTitle">Habilidades</h2>
                 <ul id="skillsList"></ul>
             </section>
 
             <section id="softskills">
-                <h2>Habilidades blandas</h2>
+                <h2 data-i18n="softSkillsTitle">Habilidades blandas</h2>
                 <ul id="softSkillsList"></ul>
             </section>
 
             <section id="contact">
-                <h2>Contacto</h2>
-                <p>Si quieres que añada un formulario de contacto, indícamelo. Por ahora el correo aparece a la
-                    izquierda.</p>
+                <h2 data-i18n="contactTitle">Contacto</h2>
+                <p><span data-i18n="emailLabel">Email</span>: <a href="mailto:raulolivapadilla99@gmail.com">raulolivapadilla99@gmail.com</a></p>
+                <p><span data-i18n="phoneLabel">Telefono</span>: <a href="tel:+34656580914">+34 656 580 914</a></p>
             </section>
         </div>
     </main>
 
     <footer class="site-footer">
-        <div class="container">© <span id="year"></span> Raúl Oliva Padilla — Currículum Interactivo</div>
+        <div class="container">© <span id="year"></span> Raúl Oliva Padilla — <span data-i18n="footerTitle">Currículum Interactivo</span></div>
     </footer>
 
     <script src="js/script.js"></script>
